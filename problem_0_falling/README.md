@@ -19,10 +19,12 @@ Good luck!
 You can play the game by running the `play_game.py` script. Use the keys `["W", "A", "S", "D"]`
 keys to control the agent.
 
-## Solution
+## Submission Format
 Your agent must be implemented in python with a class similar to `DemoAgent`. The policy of the 
 agent will be implemented in the method `act` and will only have access to the `observation` 
-argument.  
+argument (a numpy array containing the game screen image). 
+
+**A python file with your agent class that can be run using our example (details below).**
 
 ## Running the tests
 
