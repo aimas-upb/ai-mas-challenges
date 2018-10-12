@@ -40,15 +40,17 @@ Your tasks are the following:
   4. Have the the above ROS Node _publish_ a set of random range measurements in the polar coordinate
   form mentioned previously (distance, angle in radians).
   The measurements are published _in the reference frame_ of sensor 1. For this you have to:
-    - define a ROS message format for your measurements (see [this tutorial](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) for examples)
-    - _publish_ the measurements on the /range/sensor1 topic (see [this ROS Publsih/Subscribe tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
+
+   - define a ROS message format for your measurements (see [this tutorial](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) for examples)
+   - _publish_ the measurements on the /range/sensor1 topic (see [this ROS Publsih/Subscribe tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
      to get started)
 
   5. Write another ROS Node, for sensor 2, whose job it is to:
-    - subscribe to the ROS Node for sensor 1 to receive range measurements of that node
-    - use to the transform broadcast by the ROS Node of sensor 1 to convert the measurements from the
+
+   - subscribe to the ROS Node for sensor 1 to receive range measurements of that node
+   - use to the transform broadcast by the ROS Node of sensor 1 to convert the measurements from the
     reference frame of sensor 1 to that of sensor 2
-    - publish the transformed measurements under the topic /range/sensor2
+   - publish the transformed measurements under the topic /range/sensor2
 
 To test tasks 4 and 5, you may use the data in `data/test_sensor1.csv`,
 which provides 10 measurements (of **different** targets this time). Have the ROS Node for sensor 1 publish
