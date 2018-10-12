@@ -82,3 +82,37 @@ if __name__ == "__main__":
                 'angle': round(s[1], 4)
             })
 
+
+    test_distances = np.random.uniform(low=2.5, high=10.5, size=(10,))
+    test_angles = np.random.uniform(low = np.pi / 30, high = 2 * np.pi / 3, size=(10,))
+
+    test_points = [np.array([e[0], e[1]]) for e in zip(test_distances, test_angles)]
+    test_points_coords = [ np.array([ e[0] * math.cos(e[1]), e[0] * math.sin(e[1]) ]) for e in test_points]
+
+    test_points_rotated = [np.matmul(s, rotation_matrix) for s in test_points_coords]
+    test_points_transformed = [np.array([s[0] - trans_new_coord[0], s[1] - trans_new_coord[1]]) for s in test_points_rotated]
+
+    # plt.scatter([s[0] for s in test_points_coords], [s[1] for s in test_points_coords])
+    # plt.scatter([s[0] for s in test_points_transformed], [s[1] for s in test_points_transformed])
+
+    test_points_transformed_dist = [np.array( [np.linalg.norm(s), math.atan2(s[1], s[0])] ) for s in test_points_transformed]
+
+    with open("data/test_sensor1.csv", mode='w') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for s in test_points:
+            writer.writerow({
+                'distance': round(s[0], 4),
+                'angle': round(s[1], 4)
+            })
+
+    with open("data/test_sensor2.csv", mode='w') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for s in test_points_transformed_dist:
+            writer.writerow({
+                'distance': round(s[0], 4),
+                'angle': round(s[1], 4)
+            })

@@ -18,12 +18,12 @@ transform writing.
 ### Problem Description
 
 You are given two sensors that can measure _distances_ in 2D. The sensors report their findings in
-polar coordinates, i.e. a _distance_ value and an _angle_ (expressed in radians,
+polar coordinates, i.e. a _distance_ value (expressed in meters) and an _angle_ (expressed in radians,
 measuring counterclockwise rotation from the X-axis of the sensor).
 
 However, the sensors are not perfectly accurate and can have measurement errors.
 
-You are given two CSV files, which contain 100 range measurements **of the same target**
+You are given two CSV files (`data/sensor1.csv` and `data/sensor2.csv`), which contain 100 range measurements **of the same target**
 (i.e. a single point in 2D), one for each sensor.
 
 Your tasks are the following:
@@ -45,9 +45,17 @@ Your tasks are the following:
     - _publish_ the measurements on the /range/sensor1 topic (see [this ROS Publsih/Subscribe tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
      to get started)
 
-  5. Write another ROS Node, whose job it is to:
+  5. Write another ROS Node, for sensor 2, whose job it is to:
 
     - subscribe to the ROS Node for sensor 1 to receive range measurements of that node
     - use to the transform broadcast by the ROS Node of sensor 1 to convert the measurements from the
     reference frame of sensor 1 to that of sensor 2
     - publish the transformed measurements under the topic /range/sensor2
+
+To test tasks 4 and 5, you may use the data in `data/test_sensor1.csv`,
+which provides 10 measurements (of **different** targets this time). Have the ROS Node for sensor 1 publish
+these points.
+
+The ROS Node for sensor 2 should output values that can be compared against those of `data/test_sensor2.csv`.
+Distances should be exact within a +/- 0.75 m, while angle measurements
+should be exact to within +/- 2 degrees (i.e. +/- pi/90 radians).
