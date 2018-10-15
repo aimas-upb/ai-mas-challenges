@@ -1,13 +1,16 @@
 # AI-MAS Lab challenge 
 
-Have fun runn
+Can you help us solve these problems? The AI-MAS Lab is looking for the best solutions!
 
 ## Submission Format
 
-We will expect your final solutions **until the 26th of October, 23:59**. We expect your 
-solutions via a Github repo
+You can send your final solutions **until the 26th of October, 23:59** using the following form https://goo.gl/forms/CX407rp5ysISIL9Y2.
 
-Each problem (subfolder) has more details under this section. 
+We expect your solutions via a Github repo (use the same subfolder structure).
+
+Only `problem_0_researcher` is mandatory.
+
+Each problem (subfolder) has more details under the Readme section with the same title as this one. 
 
 ### Before you get started
 
@@ -22,11 +25,17 @@ For each problem we recommend additional python libraries, such as:
 * Scikit-learn
 * Pandas
 
-Try running `pip3 install -r requirements.txt`
+### Context
 
-```
-Give an example
-```
+The AI-MAS Lab group has made  available a list of research topics for which it is actively 
+looking for students to  join! You can find more details about the application process, the 
+topics proposed and the groups of research at the following link https://aimas.cs.pub.ro/research-topics/. 
+
+1. First apply via form: https://goo.gl/forms/NNqGOIZUctFCNnGX2
+2. Send us solutions to these problems via a github repo using the form https://goo
+.gl/forms/CX407rp5ysISIL9Y2 (Only `problem_0_researcher` is mandatory)
+
+**Deadline: 26th of October, 23:59**
 
 ## Authors
 

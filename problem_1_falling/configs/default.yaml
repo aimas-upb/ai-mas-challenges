@@ -1,0 +1,10 @@
+obstacles: [
+        ["objects_examples/obstacle_1.png", 0.2, 0.5, 0],
+        ["objects_examples/obstacle_2.png", 0.2, 0.5, 0],
+        ["objects_examples/obstacle_3.png", 0.2, 0.5, 0]
+    ]
+obstacles_speed: 2
+background: [0, 0, 0]
+agent_size: 8
+agent_color: [255, 0, 0]
+test_steps: 10000
