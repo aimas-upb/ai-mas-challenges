@@ -227,7 +227,7 @@ class FallingObjects:
 
         size_x, size_y = obstacle_shape.shape[:2]
         x_pos = -size_x
-        y_pos = np.random.randint(size_y, map_size_y-size_y)
+        y_pos = np.random.randint(size_y-1, map_size_y-size_y)
 
         new_obstacle = MapObject(obstacle_shape, obstacles_speed,
                                  (-size_x, map_size_x+size_x),
