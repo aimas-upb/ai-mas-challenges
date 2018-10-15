@@ -26,12 +26,11 @@ The test file will be disclosed the latest on Monday, the 15th of October.
 
 ## Data overview
 
-Videos are shot at 30 fps with a resolution of 640x360. 
+Videos are shot at 10 fps with a resolution of 640x360. 
 
-We will release the final dataset on Monday, but here is some data to start with. (There will be 
-a small difference in the data).
+You can download the data from the following link: https://goo.gl/eNSEZy.
 
-* `data/train.mp4` is a video of driving around ACS Building containing 12976 frames.
-* `data/train.log` contains the speed of the car at each frame in km/h, one speed on each line.
-* `data/test.mp4` is a different driving video containing #TODO frames. (Will be disclosed during
- latest Monday, 15th of October)
+* `speed_data/train.mp4` is a video of driving around ACS Building containing 14400 frames.
+* `speed_data/train_speed.log` contains the speed of the car at each frame in km/h, one speed on each 
+line.
+* `speed_data/test.mp4` is the test dataset containing 6500 frames.
