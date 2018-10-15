@@ -59,3 +59,14 @@ these points.
 The ROS Node for sensor 2 should output values that can be compared against those of `data/test_sensor2.csv`.
 Distances should be exact within a +/- 0.75 m, while angle measurements
 should be exact to within +/- 2 degrees (i.e. +/- pi/90 radians).
+
+### Submission Format
+
+Please send us your Python and/or C++ implementations for the ROS Nodes of sensor 1 and sensor 2, along with indications of how to run them (e.g. if they take arguments).
+
+Evaluation is based on the following criteria:
+  - each Node runs
+  - `rostopic echo` on the topics `/range/sensor1` and `/range/sensor2` returns data
+  - the tf broadcast occurs and we are able to see it with the `tf_echo` debugging tool. We tolerate deviances of 0.75 for translation and 2 degrees for rotation.
+  - the ranges published by ROS Node for sensor 2, in the frame of sensor 2, are comparable to our own output. We tolerate deviances of 0.75 for distance and 2 degrees for angle.
+
