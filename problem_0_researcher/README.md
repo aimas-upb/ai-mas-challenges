@@ -6,8 +6,7 @@ Your task is to convey your vision to your team, through a (max) 2 page essay in
 
 * 3 problems and challenges that the proposed algorithms will face
 * 3 development challenges that might arise during implementation
-
-A step-by-step plan (as detailed as you see fit) which sets the roadmap for delivering a robust and impressive first prototype
+* A step-by-step plan (as detailed as you see fit) which sets the roadmap for delivering a robust and impressive first prototype
 
 ## Submission Format
 
