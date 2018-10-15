@@ -10,7 +10,7 @@ We expect your solutions via a Github repo (use the same subfolder structure).
 
 Only `problem_0_researcher` is mandatory.
 
-Each problem (subfolder) has more details under the Readme section with the same title as this one. 
+Each problem (subfolder) has more details under its README section. Check the _Submission Format_ section of each problem to see how your solution will be evaluated and what you should include in the repo you submit.
 
 ### Before you get started
 
