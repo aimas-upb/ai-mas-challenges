@@ -14,7 +14,9 @@ Surprise us with your findings!
 Examples and inspiration sources for exploratory data analysis:
 * Kaggle completitions and kernels can offer good inspiration
 **https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python**
+
 https://www.kaggle.com/pavansanagapati/a-simple-tutorial-on-exploratory-data-analysis
+
 https://www.kaggle.com/rchattergoon/avocado-prices-across-the-usa 
 
 You can use whatever tool you feel comfortable exploring this data.
