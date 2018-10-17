@@ -6,11 +6,10 @@ policy?
 Any overlap of the agent (blue box) with a falling object results in a reward of -1. There is only 
 one obstacle on the map at any given moment and they fall with constant speed. The 
 obstacles can have different shapes, sizes, rotations, speeds. Your agent has to be prepared for 
-any kind of obstacle.
+any kind of obstacle. 
 
 You have to implement an agent, just like our demo agent from `demo_agent.py`. The agent will be 
-tested using the script `test_agent.py` using different config files. There must be a better 
-solution than the random agent.
+tested using the script `test_agent.py` using different config files. We will evaluate the agent using new configs and obstacle shapes, so try to have a agent that is prepared. There must be a better solution than the random agent.
 
 Good luck!
 
