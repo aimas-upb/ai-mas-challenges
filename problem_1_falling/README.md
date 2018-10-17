@@ -20,8 +20,7 @@ keys to control the agent.
 
 ## Submission Format
 Your agent must be implemented in python with a class similar to `DemoAgent`. The policy of the 
-agent will be implemented in the method `act` and will only have access to the `observation` 
-argument (a numpy array containing the game screen image). 
+agent will be implemented in the method `act` and will only have access to the variables returned by the `env.step` method: `observation, reward, done_state` (a numpy array containing the game screen image/ a float number representing the reward / a boolean representing end of episode if True). 
 
 **A python file with your agent class that can be run using our example (details below).**
 
