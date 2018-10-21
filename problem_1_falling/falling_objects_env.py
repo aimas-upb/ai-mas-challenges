@@ -129,7 +129,7 @@ class FallingObjects:
 
         # Init agent
         agent_shape = self.generate_agent_shape()
-        agent_pos = [map_size[1] - agent_size, map_size[0]//2]
+        agent_pos = [map_size[1] - agent_size, map_size[0]//2 - agent_size//2]
         self.agent = MapObject(agent_shape, 1, (0, map_size[1]), (0, map_size[0]), agent_pos)
 
         self.agent_pos = np.array([0, 0])
@@ -227,7 +227,7 @@ class FallingObjects:
 
         size_x, size_y = obstacle_shape.shape[:2]
         x_pos = -size_x
-        y_pos = np.random.randint(size_y-1, map_size_y-size_y)
+        y_pos = np.random.randint(0, map_size_y-size_y)
 
         new_obstacle = MapObject(obstacle_shape, obstacles_speed,
                                  (-size_x, map_size_x+size_x),
