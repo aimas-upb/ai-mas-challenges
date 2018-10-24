@@ -112,7 +112,7 @@ class MapObject:
         return self.pos
 
     def reset(self):
-        self.pos = self.default_pos
+        self.pos = self.default_pos.copy()
 
 
 class FallingObjects:
